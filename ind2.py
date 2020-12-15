@@ -10,7 +10,7 @@
 # import sys
 
 if __name__ == '__main__':
-    a = tuple(map(int, input("Введите список: ").split()))
+    a = list(map(int, input("Введите список: ").split()))
     if a.count(0) < 2:
         print('Не хватает нулевых элементов')
     x1 = x2 = -1
