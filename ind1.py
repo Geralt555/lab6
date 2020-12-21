@@ -7,10 +7,7 @@
 # import sys
 
 if __name__ == '__main__':
-    a = [1, 4, -5, -6, -9, 5, 8, -11, 13]
-    print(a)
-    negatives = [i for i in a if i < 0]
-    mul = 1
-    for i in negatives:
-        mul *= i
-    print('Произведение отрицательных: ', mul)
+    lst = [1, 3, 5, 3, 5, 8, 5, 34, 5, 8, 9, 453, 36, 7, 4]
+    r = len(lst) if len(lst) % 2 == 0 else len(lst) - 1
+    for i in range(0, r, 2):
+        print(lst[i] - lst[i + 1], end=' ')
