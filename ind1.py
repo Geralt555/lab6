@@ -9,6 +9,6 @@
 if __name__ == '__main__':
     lst = [1, 3, -5, 3, 5, -8, 5, 34, -5, 15]
     r = len(lst)
-    for i in range(0, r-1):
-        if lst [i] >=0 and lst [i+1] >=0:
-           print(lst[i] - lst[i + 1], end=' ')
+    for i in range(0, r - 1):
+        if lst[i] >= 0 and lst[i + 1] >= 0:
+            print(lst[i] - lst[i + 1], end=' ')
