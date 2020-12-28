@@ -33,3 +33,11 @@ if __name__ == '__main__':
         m *= a[i]
     print("Произведение элементов списка, расположенных между первым и вторым"
           " нулевыми элементами равно:", m)
+    b = []
+    for i in range(len(a)):
+        if a[i] % 2 == 1:
+            b.append(a[i])
+    for i in range(len(a)):
+        if a[i] % 2 == 0:
+            b.append(a[i])
+    print(*b)
